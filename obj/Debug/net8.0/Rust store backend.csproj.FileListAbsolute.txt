@@ -1,0 +1,48 @@
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\appsettings.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.staticwebassets.endpoints.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.exe
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.deps.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.runtimeconfig.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rust store backend.pdb
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Rcon.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.csproj.AssemblyReference.cache
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.AssemblyInfoInputs.cache
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.AssemblyInfo.cs
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.csproj.CoreCompileInputs.cache
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\scopedcss\bundle\Rust store backend.styles.css
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets\msbuild.Rust store backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets\msbuild.Rust store backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets\msbuild.build.Rust store backend.props
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Rust store backend.props
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Rust store backend.props
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust sto.32219385.Up2Date
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\refint\Rust store backend.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.pdb
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\Rust store backend.genruntimeconfig.cache
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\obj\Debug\net8.0\ref\Rust store backend.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\APIMatic.Core.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Microsoft.Json.Pointer.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\PayPalServerSDK.dll
+C:\Users\Adi\source\repos\Rust store backend\Rust store backend\bin\Debug\net8.0\Polly.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Rust store backend.props" />
+</Project>
