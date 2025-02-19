@@ -15,7 +15,7 @@ public class CommandController : ControllerBase
     [HttpPost("command")]
     public async Task<IActionResult> Command(CommandRequest request)
     {
-      //  await _rconService.SendCommand();
+       // await _rconService.SendCommand();
         return Ok();
     }
 }

@@ -17,6 +17,9 @@ using PaypalServerSdk.Standard.Authentication;
 using PaypalServerSdk.Standard.Controllers;
 using PaypalServerSdk.Standard.Http.Response;
 using PaypalServerSdk.Standard.Models;
+using Rust_store_backend.Models.DB;
+using Rust_store_backend.Services;
+using Microsoft.EntityFrameworkCore;
 namespace Rust_store_backend.Controllers
 {
     [ApiController]
@@ -36,9 +39,13 @@ namespace Rust_store_backend.Controllers
         }
 
         private readonly ILogger<CheckoutController> _logger;
+        private readonly RustDBContext _context;
+        private readonly RCONService _rcon;
 
-        public CheckoutController(Microsoft.Extensions.Configuration.IConfiguration configuration, ILogger<CheckoutController> logger)
+        public CheckoutController(Microsoft.Extensions.Configuration.IConfiguration configuration, ILogger<CheckoutController> logger, RustDBContext context, RCONService rcon)
         {
+            _rcon = rcon;
+            _context = context;
             _configuration = configuration;
             _logger = logger;
             _paymentIntentMap = new Dictionary<string, CheckoutPaymentIntent>
@@ -88,6 +95,7 @@ namespace Rust_store_backend.Controllers
             var cartArray = cart.GetProperty("cart");
             var cartElement1 = cartArray[0];
             var cartQuantity = cartElement1.GetProperty("quantity").GetString();
+            var steamId = cartElement1.GetProperty("steamId").GetString();
 
 
             var pricePerItem = 1; // Example unit price
@@ -111,7 +119,33 @@ namespace Rust_store_backend.Controllers
 
 
             ApiResponse<Order> result = await _ordersController.OrdersCreateAsync(ordersCreateInput);
+            var orderId = result.Data.Id;
+            var order = new OrderDB();
+            order.OrderId = orderId;
+            order.SteamId = steamId;
+            order.Amount = GetIngameCash(int.Parse(cartQuantity));
+            await _context.AddAsync(order);
+            await _context.SaveChangesAsync();
             return result;
+        }
+
+        private int GetIngameCash(int quantity)
+        {
+            switch (quantity)
+            {
+                case 5:
+                    return 1000;
+                case 11:
+                    return 2100;
+                case 29:
+                    return 11500;
+                case 59:
+                    return 11500;
+                case 119:
+                    return 25000;
+                default:
+                    throw new Exception("Invalid amount");
+            }
         }
 
 
@@ -121,6 +155,19 @@ namespace Rust_store_backend.Controllers
             try
             {
                 var result = await _CaptureOrder(orderID);
+                try
+                {
+                    var order = await _context.Orders.FirstOrDefaultAsync(e => e.OrderId == orderID);
+                    
+                    await _rcon.DepositCommand(order.Amount, order.SteamId);
+                }
+                catch
+                {
+                    Console.Error.WriteLine($"Failed to deposit ingame money for order id {orderID}");
+                }
+                
+                Console.WriteLine("Order completed!");
+
                 return StatusCode((int)result.StatusCode, result.Data);
             }
             catch (Exception ex)
