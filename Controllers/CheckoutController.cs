@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Runtime.Serialization;
@@ -133,16 +133,17 @@ namespace Rust_store_backend.Controllers
         {
             switch (quantity)
             {
+                case 3:
+                  return 500;
                 case 5:
                     return 1000;
-                case 11:
+                case 10:
                     return 2100;
                 case 29:
                     return 11500;
                 case 59:
                     return 11500;
-                case 119:
-                    return 25000;
+                
                 default:
                     throw new Exception("Invalid amount");
             }
