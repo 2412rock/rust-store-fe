@@ -30,8 +30,33 @@
                 <h1 style="color: white;">Ranks</h1>
             </div>
 
-            <div class="purchase-items-tiles">
-                <app-purchase-item-tile></app-purchase-item-tile>
+            <div class="purchase-items-tiles" style="display: flex; flex-direction: row;">
+                <div *ngFor="let i of [1,2,3,4,5]" style="margin-right: 1em;">
+                    <app-purchase-item-tile></app-purchase-item-tile>
+                </div>
+            </div>
+        </div>
+        <div class="purchase-items-container">
+            <div class="title">
+                <h1 style="color: white;">Gems</h1>
+            </div>
+
+            <div class="purchase-items-tiles" style="display: flex; flex-direction: row;">
+                <div *ngFor="let i of [1,2,3,4,5]" style="margin-right: 1em;">
+                    <app-purchase-item-tile></app-purchase-item-tile>
+                </div>
+            </div>
+
+            <div class="purchase-items-container">
+                <div class="title">
+                    <h1 style="color: white;">Shop points</h1>
+                </div>
+    
+                <div class="purchase-items-tiles" style="display: flex; flex-direction: row;">
+                    <div *ngFor="let i of [1,2,3,4,5]" style="margin-right: 1em;">
+                        <app-purchase-item-tile></app-purchase-item-tile>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
