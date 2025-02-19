@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rust store backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aca1c67c8d1dbf72a331a04abb19f2e80867bb73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bf5d3455bbf39f0f43e4c56d4a0534e1b3ab3c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rust store backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rust store backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

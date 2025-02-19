@@ -7,13 +7,17 @@
             <span style="font-family: sans-serif; font-size: large; margin-left: 0.5em; color: rgb(41, 41, 41); font-weight: bold;">Join us on discord</span>
         </div>
         <div class="header_btns">
-            <div class="cart-btn" (click)="openCart()">
+            <div  class="cart-btn" style="margin-right: 1em; color: white; font-weight: bold;" (click)="openMyAccount()">
+                <span *ngIf="profilePic && name">My account</span>
+                <span *ngIf="!profilePic || !name">Add steam</span>
+            </div>
+            <div *ngIf="profilePic && name" class="cart-btn" (click)="openCart()">
                 <div class="cart-btn-profile-pic">
-                    <img style="width: 3em; height: 3em; margin-right: 0.5em;" src="https://blog-admin.siriusxm.com/wp-content/uploads/2025/01/siriusxm-donald-trump-inauguration-16x9-1.jpg">
+                    <img style="width: 3em; height: 3em; margin-right: 0.5em;" [src]="profilePic">
                 </div>
                 <div class="cart-btn-text">
                     <div class="cart-btn-title">
-                        <span style="color: white; font-weight: bold; font-size: medium;">POTUS's Cart</span>
+                        <span style="color: white; font-weight: bold; font-size: medium;">{{name}}'s Cart</span>
                     </div>
                     <div class="cart-btn-items">
                         <span style=" font-weight: bold; font-size: small;">{{cart.items.length}} items</span>
@@ -21,10 +25,13 @@
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </div>
-    <div class="content">
+    <div class="content" >
         <span style="font-size: 4.3em; color: white; font-family: sans-serif;">Rock's world store</span>
+        <span *ngIf="!profilePic || !name" style="color: rgb(255, 80, 80);"> !!! Please add a valid steam id to enable shopping cart !!!</span>
         <!-- <div class="purchase-items-container">
             <div class="title">
                 <h1 style="color: white;">Ranks</h1>

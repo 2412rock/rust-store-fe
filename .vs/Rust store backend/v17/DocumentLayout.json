@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -46,8 +42,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T17:34:46.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T17:34:46.236Z"
             },
             {
               "$type": "Document",
@@ -72,8 +67,7 @@
               "RelativeToolTip": "Controllers\\CheckoutController.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAmwI0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T14:12:51.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:12:51.015Z"
             },
             {
               "$type": "Document",
@@ -85,8 +79,7 @@
               "RelativeToolTip": "bin\\Debug\\net8.0\\Rust store backend.deps.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-19T14:12:06.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:12:06.908Z"
             },
             {
               "$type": "Document",
@@ -98,8 +91,11 @@
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-19T14:10:15.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:10:15.892Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

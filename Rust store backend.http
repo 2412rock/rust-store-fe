@@ -1,6 +1,0 @@
-@Rust_store_backend_HostAddress = http://localhost:5245
-
-GET {{Rust_store_backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
