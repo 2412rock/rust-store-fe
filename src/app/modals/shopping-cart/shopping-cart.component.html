@@ -1,11 +1,14 @@
 <h2 mat-dialog-title>Your Shopping Cart</h2>
 <mat-dialog-content>
   <div *ngFor="let item of cart.items">
-    {{ item.productName + " shop points" }}
+    <div style="padding: 0.5em;">
+      <i style="color:red; cursor: pointer; margin-right: 0.5em; font-size: large;" class="fa-solid fa-trash" (click)="deleteItem(item.productName)"></i>
+      <span style="font-size: large;">1 x {{ item.productName + " shop points" }}</span>
+    </div>
   </div>
-  <div>Total: {{ getTotal() }} EUR</div>
+  <div style="font-weight: bold;">Total: {{ total }} EUR</div>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="close()">Close</button>
-  <button mat-button (click)="checkout()">Checkout</button>
+  <button *ngIf="total && total > 0" mat-button (click)="checkout()">Checkout</button>
 </mat-dialog-actions>

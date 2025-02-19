@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { Cart } from '../../models/cart';
+import { Cart, CartItem } from '../../models/cart';
 import { Router } from '@angular/router';
 import { CheckoutComponent } from '../../components/checkout/checkout.component';
 import { LocalstorageService } from '../../services/localstorage.service';
@@ -23,6 +23,7 @@ import { LocalstorageService } from '../../services/localstorage.service';
 export class ShoppingCartComponent {
 
   cart: Cart = this.data.cart;
+  public total: number | null;
 
   constructor(
     private router: Router,
@@ -30,6 +31,26 @@ export class ShoppingCartComponent {
     private localStorage: LocalstorageService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
+
+  ngOnInit(){
+    this.total =  this.getTotal();
+  }
+
+  deleteItem(name: string){
+    let newItems: CartItem[] = [];
+    let first = false;
+    for(let i=0; i<this.cart.items.length; i++){
+      if(this.cart.items[i].productName === name && !first){
+        // skip first occurence
+        first = true;
+      }
+      else{
+        newItems.push(this.cart.items[i]);
+      }
+    }
+    this.cart.items = newItems;
+    this.total = this.getTotal();
+  }
 
   getTotal() {
     let total = 0;
