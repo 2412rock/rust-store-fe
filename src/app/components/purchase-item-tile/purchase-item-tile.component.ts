@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-purchase-item-tile',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './purchase-item-tile.component.scss'
 })
 export class PurchaseItemTileComponent {
-
+  @Input() amount: number;
+  @Input() price: number;
 }
