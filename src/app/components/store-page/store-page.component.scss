@@ -49,7 +49,17 @@ span{
 
 .content{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 5em;
+}
+
+.title{
+    
+}
+
+.purchase-items-container{
+    margin-top: 4em;
+    width: 100vw;
 }
