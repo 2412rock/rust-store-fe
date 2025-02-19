@@ -53,9 +53,9 @@
                 </div>
     
                 <div class="purchase-items-tiles" style="display: flex; flex-direction: row;">
-                    <div *ngFor="let i of [1,2,3,4,5]" style="margin-right: 1em;">
-                        <div (click)="addToCart(i)">
-                            <app-purchase-item-tile [amount]="i * 1000" [price]="i*10"></app-purchase-item-tile>
+                    <div *ngFor="let offer of offers" style="margin-right: 1em;">
+                        <div (click)="addToCart(offer)">
+                            <app-purchase-item-tile [amount]='offer.shopPoints' [price]="offer.eur"></app-purchase-item-tile>
                         </div>
                     </div>
                 </div>

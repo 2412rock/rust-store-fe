@@ -61,7 +61,7 @@ export class PaypaButtonComponent {
                   'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                  cart: [{ id: '1', quantity: this.amount }],
+                  cart: [{ id: '1', quantity: this.amount, steamId: 'POTUS' }],
                 }),
               });
 
