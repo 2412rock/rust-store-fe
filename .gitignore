@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Rust store backend.csproj
+
+/bin
+/obj
+/.vs
+=======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
@@ -40,3 +51,4 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+>>>>>>> ca3b139a111ad77e5118c776c2ace6726b209e91
