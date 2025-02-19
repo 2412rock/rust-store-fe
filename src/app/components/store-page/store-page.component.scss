@@ -1,0 +1,65 @@
+.body{
+    background-color: hsl(250deg, 9%, 13%);
+    width: 100vw;
+    height: fit-content;
+    height: 100vh;
+}
+
+.discord_btn{
+    background-color: #7289da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+   padding: 1em;
+   border: 1px solid #7289da;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.header{
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-btn{
+    background-color: hsl(245deg, 10%, 23%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+   padding: 0.5em;
+   cursor: pointer;
+   border-radius: 5px;
+}
+.cart-btn-title{
+    margin-bottom: 0.5em;
+}
+
+span{
+    font-family: sans-serif;
+}
+
+.cart-btn-items{
+    color: rgb(150, 150, 150);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.title{
+    
+}
+
+.purchase-items-container{
+    margin-top: 4em;
+}
