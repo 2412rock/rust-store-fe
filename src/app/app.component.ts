@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { PaypaButtonComponent } from "./components/paypa-button/paypa-button.component";
 import { StorePageComponent } from './components/store-page/store-page.component';
 
@@ -12,4 +12,12 @@ import { StorePageComponent } from './components/store-page/store-page.component
 })
 export class AppComponent {
   title = 'rust-store';
+
+  constructor(private router: Router){
+
+  }
+
+  ngOnInit(){
+    this.router.navigate(['./store'])
+  }
 }

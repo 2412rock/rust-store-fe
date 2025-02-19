@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnInit, OnDestroy, Input } from '@angular/core';
 
 // src/paypal.d.ts
 declare global {
@@ -15,11 +15,14 @@ export {};
   styleUrl: './paypa-button.component.scss'
 })
 export class PaypaButtonComponent {
+
+  @Input() amount: string;
   private paypalScript: HTMLScriptElement;
 
   constructor(private el: ElementRef) {}
 
   ngOnInit(): void {
+    console.log("Got amount ", this.amount)
     this.loadPaypalScript();
   }
 
@@ -49,15 +52,16 @@ export class PaypaButtonComponent {
           message: {
             amount: 100,
           },
-          async createOrder(data: any, actions: any) {
+          createOrder: async (data: any, actions: any) => {
             try {
+              console.log("quantityt ", this.amount)
               const response = await fetch('http://localhost:4600/api/orders', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                  cart: [{ id: '1', quantity: '10' }],
+                  cart: [{ id: '1', quantity: this.amount }],
                 }),
               });
 

@@ -5,6 +5,9 @@ import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/materia
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { Cart } from '../../models/cart';
+import { Router } from '@angular/router';
+import { CheckoutComponent } from '../../components/checkout/checkout.component';
+import { LocalstorageService } from '../../services/localstorage.service';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -12,7 +15,8 @@ import { Cart } from '../../models/cart';
   imports: [
     CommonModule,
     MatDialogModule,
-    MatButtonModule],
+    MatButtonModule,
+    CheckoutComponent],
   templateUrl: './shopping-cart.component.html',
   styleUrl: './shopping-cart.component.scss'
 })
@@ -21,7 +25,9 @@ export class ShoppingCartComponent {
   cart: Cart = this.data.cart;
 
   constructor(
+    private router: Router,
     public dialogRef: MatDialogRef<ShoppingCartComponent>,
+    private localStorage: LocalstorageService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
@@ -40,6 +46,8 @@ export class ShoppingCartComponent {
 
   checkout() {
     // Implement checkout logic here
+    this.localStorage.setAmountToPay(this.getTotal());
+    this.router.navigate(['/checkout']);
     this.dialogRef.close();
   }
 }
