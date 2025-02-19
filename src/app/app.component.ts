@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PaypaButtonComponent } from "./components/paypa-button/paypa-button.component";
+import { StorePageComponent } from './components/store-page/store-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PaypaButtonComponent],
+  imports: [RouterOutlet, PaypaButtonComponent, StorePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
