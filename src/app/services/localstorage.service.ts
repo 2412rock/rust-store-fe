@@ -14,4 +14,12 @@ export class LocalstorageService {
   getAmpountToPay(){
     return localStorage.getItem("totalamaount")
   }
+
+  setSteamId(id: string){
+    localStorage.setItem("steamid", id);
+  }
+
+  getSteamId(){
+    return localStorage.getItem("steamid");
+  }
 }

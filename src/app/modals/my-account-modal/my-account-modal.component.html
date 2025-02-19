@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Your account</h2>
+<mat-dialog-content>
+  <div style="display: flex; flex-direction: column;">
+    <span style="margin-bottom: 1em;">Current steam id : {{currentSteamId ? currentSteamId : 'none'}}</span>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter your steam ID</mat-label>
+        <input [(ngModel)]="updatedSteamId" matInput placeholder="">
+      </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button (click)="change()">Update</button>
+</mat-dialog-actions>
