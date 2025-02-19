@@ -7,7 +7,7 @@
             <span style="font-family: sans-serif; font-size: large; margin-left: 0.5em; color: rgb(41, 41, 41); font-weight: bold;">Join us on discord</span>
         </div>
         <div class="header_btns">
-            <div class="cart-btn">
+            <div class="cart-btn" (click)="openCart()">
                 <div class="cart-btn-profile-pic">
                     <img style="width: 3em; height: 3em; margin-right: 0.5em;" src="https://blog-admin.siriusxm.com/wp-content/uploads/2025/01/siriusxm-donald-trump-inauguration-16x9-1.jpg">
                 </div>
@@ -16,7 +16,7 @@
                         <span style="color: white; font-weight: bold; font-size: medium;">POTUS's Cart</span>
                     </div>
                     <div class="cart-btn-items">
-                        <span style=" font-weight: bold; font-size: small;">1 item(s) for 5.99$</span>
+                        <span style=" font-weight: bold; font-size: small;">{{cart.items.length}} items</span>
 
                     </div>
                 </div>
@@ -54,7 +54,9 @@
     
                 <div class="purchase-items-tiles" style="display: flex; flex-direction: row;">
                     <div *ngFor="let i of [1,2,3,4,5]" style="margin-right: 1em;">
-                        <app-purchase-item-tile [amount]="i * 1000" [price]="i*10"></app-purchase-item-tile>
+                        <div (click)="addToCart(i)">
+                            <app-purchase-item-tile [amount]="i * 1000" [price]="i*10"></app-purchase-item-tile>
+                        </div>
                     </div>
                 </div>
             </div>
